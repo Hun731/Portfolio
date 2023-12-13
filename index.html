@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Krishna - Portfolio</title>
+    <style>
+      body {
+        background: linear-gradient(
+          to top,
+          #27374d,
+          #526d82,
+          #9db2bf,
+          #dde6ed,
+          whitesmoke,
+          #87CEEB
+        );
+        margin: 0;
+      }
+
+      header {
+        font-size: 2em;
+        font-weight: bold;
+        background: linear-gradient(to right, #ff8c00, #ffd700);
+        -webkit-background-clip: text;
+        color: transparent;
+        text-align: center;
+        padding: 1% 0;
+        width: 100%;
+      }
+
+      nav a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      section {
+        padding: 20px;
+        margin: 20px 0 80px;
+      }
+
+      a {
+        color: whitesmoke;
+        text-decoration: none;
+        border: 0px solid #444;
+        border-radius: 5px;
+      }
+
+      a:hover {
+        color: #000;
+        background-color: azure;
+      }
+
+      footer {
+        color: whitesmoke;
+        text-align: center;
+        padding: 10px 0;
+        bottom: 0;
+        width: 100%;
+      }
+
+      .about {
+        font-size: 16px;
+        margin-bottom: 15px;
+      }
+
+      #about,
+      #skills,
+      #projects,
+      #contact {
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 15px;
+      }
+
+      #contact {
+        color: azure;
+      }
+
+      .card-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 20px;
+      }
+
+      .card {
+        backdrop-filter: blur(10px);
+        width: 90%;
+        margin: 20px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+        text-align: center;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+      }
+
+      .card ul,
+      .card a,
+      .card p {
+        display: none;
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      .card:hover ul,
+      .card:hover a,
+      .card:hover p {
+        display: block;
+        opacity: 1;
+      }
+
+      .card:target {
+        width: 600px;
+        height: 300px;
+        transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+      }
+
+      .card:target ul,
+      .card:target a,
+      .card:target p {
+        display: block;
+        opacity: 1;
+      }
+
+      h2,
+      h3 {
+        text-align: left;
+      }
+
+      nav {
+        background: linear-gradient(to right, #ff8c00, #ffd700);
+        color: transparent;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+        font-size: 2em;
+      }
+
+      .fontLarge {
+        font-size: 2em;
+      }
+
+      .sun {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        width: 100px; /* Adjust the width and height as needed */
+        height: 100px;
+        border-radius: 50%;
+        background: radial-gradient(circle, #ff8c00, #ffd700);
+      }
+
+      @media (max-width: 600px) {
+        .sun {
+          top: 50px;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: -1;
+
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="sun"></div>
+      <h1>Krishna Kant</h1>
+      <p>Polyglot Developer</p>
+    </header>
+
+    <nav>
+      <p>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </p>
+    </nav>
+
+    <section id="about">
+      <div class="card-container">
+        <div class="card">
+          <h1 style="color: #5c6d80" class="fontLarge">About Me</h1>
+          <p>
+            Embarking on my academic journey, I am currently immersed in the
+            first year of pursuing a Bachelor's degree in Biotechnology and
+            Engineering at IIT Kharagpur. My educational roots trace back to
+            Doon International School, Dehradun.
+            <br>
+            From an early age, a profound passion for technology and
+            problem-solving propelled me into the captivating realm of
+            biotechnology. My tech affinities extend beyond conventional
+            boundaries, delving deep into biotech-related disciplines. The
+            intricacies of Genomic Editing, Genetic Engineering, and Gene
+            Modeling are not just areas of study for me; they are realms where I
+            find inspiration and endless possibilities.
+            <br>
+            Moreover, my tech endeavors transcend siloed disciplines. I actively
+            seek intersections with artificial intelligence, machine learning,
+            and robotics in healthcare. The marriage of biotechnology with
+            environmental sciences, wearables in health monitoring, and quantum
+            computing in life sciences opens up avenues for groundbreaking
+            advancements.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section style="color: #27374d" id="skills">
+      <h1 class="fontLarge">Skills</h1>
+      <div class="card-container">
+        <div class="card">
+          <h2>Languages_Expertise</h2>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React JS</li>
+            <li>Python</li>
+            <li>C</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <h2>Languages_</h2>
+          <ul>
+            <li>R</li>
+            <li>C#</li>
+            <li>C++</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section style="color: whitesmoke" id="projects">
+      <h2 class="fontLarge" style="color: #27374d">Projects</h2>
+      <div class="card-container">
+        <div class="card">
+          <h3 style="color: whitesmoke">Portfolio</h3>
+          <p>You are seeing the portfolio itself.</p>
+          <a href="#">View Project</a>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <h3>Project II</h3>
+          <p>The new project will be soon added so please wait patiently.</p>
+          <!-- <a href="#">View Project</a> -->
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <h1>More</h1>
+          <p>...</p>
+          <!-- <a href="#">View Project</a> -->
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="card-container">
+        <div class="card">
+          <h2>Contact</h2>
+          <p>Email: Kant4295@gmail.com</p>
+          <p>LinkedIn: linkedin.com/in/</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Krishna Kant. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
